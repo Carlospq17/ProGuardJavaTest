@@ -1,0 +1,15 @@
+com.example.demo.Controller.DemoController -> com.example.demo.a.a:
+    com.example.demo.Service.ServiceImpl.DemoServiceImpl demoService -> a
+    12:12:void <init>() -> <init>
+    19:20:java.lang.String getHola() -> a
+    25:26:java.lang.String postHola() -> b
+com.example.demo.HelloWorldByteCodeApplication -> com.example.demo.HelloWorldByteCodeApplication:
+    7:7:void <init>() -> <init>
+    10:11:void main(java.lang.String[]) -> main
+com.example.demo.Service.DemoService -> com.example.demo.Service.DemoService:
+    java.lang.String getResponse(java.lang.String) -> getResponse
+    java.lang.String postResponse(java.lang.String) -> postResponse
+com.example.demo.Service.ServiceImpl.DemoServiceImpl -> com.example.demo.Service.a.a:
+    8:8:void <init>() -> <init>
+    12:13:java.lang.String getResponse(java.lang.String) -> getResponse
+    18:19:java.lang.String postResponse(java.lang.String) -> postResponse

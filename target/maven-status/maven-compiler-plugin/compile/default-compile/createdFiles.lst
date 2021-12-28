@@ -1,2 +1,4 @@
+com/example/demo/Service/DemoService.class
 com/example/demo/HelloWorldByteCodeApplication.class
+com/example/demo/Service/ServiceImpl/DemoServiceImpl.class
 com/example/demo/Controller/DemoController.class
