@@ -27,7 +27,8 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
     private final String SECRET = "mySecretKey";
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
+    protected void doFilterInternal(HttpServletRequest request,
+            HttpServletResponse response, FilterChain chain)
             throws ServletException, IOException {
         try {
             if (checkJWTToken(request, response)) {
@@ -43,7 +44,8 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
             chain.doFilter(request, response);
         } catch (ExpiredJwtException | UnsupportedJwtException | MalformedJwtException e) {
             response.setStatus(HttpServletResponse.SC_FORBIDDEN);
-            ((HttpServletResponse) response).sendError(HttpServletResponse.SC_FORBIDDEN, e.getMessage());
+            ((HttpServletResponse) response).sendError(HttpServletResponse.SC_FORBIDDEN,
+                    e.getMessage());
             return;
         }
     }
@@ -55,7 +57,7 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter {
 
     /**
      * Authentication method in Spring flow
-     * 
+     *
      * @param claims
      */
     private void setUpSpringAuthentication(Claims claims) {

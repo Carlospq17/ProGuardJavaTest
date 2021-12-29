@@ -1,5 +1,0 @@
-com.example.demo.Controller.DemoController
-com.example.demo.Controller.OtherDemoController
-com.example.demo.Controller.UserController
-com.example.demo.HelloWorldByteCodeApplication
-com.example.demo.HelloWorldByteCodeApplication: void main(java.lang.String[])

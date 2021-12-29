@@ -9,12 +9,12 @@ import org.springframework.stereotype.Service;
 public class DemoServiceImpl implements DemoService {
 
     @Override
-    public String getResponse(String s) {
+    public DemoModel getResponse(String s) {
         System.out.println(s);
         DemoModel model = new DemoModel();
         model.setName("Carlos");
         model.setLastName("Pool");
-        return "This get message is: " + model.toString();
+        return model;
     }
 
     @Override

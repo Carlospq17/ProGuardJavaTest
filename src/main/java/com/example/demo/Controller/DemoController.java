@@ -2,6 +2,7 @@ package com.example.demo.Controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.Model.DemoModel;
 import com.example.demo.Service.ServiceImpl.DemoServiceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +16,8 @@ public class DemoController {
     DemoServiceImpl demoService;
 
     @GetMapping(value = { "/hola" })
-    public String getHola() {
-        String s = demoService.getResponse("Holas x1");
-        return s;
+    public DemoModel getHola() {
+        return demoService.getResponse("Holas x1");
     }
 
     @PostMapping(value = { "/hola" })
