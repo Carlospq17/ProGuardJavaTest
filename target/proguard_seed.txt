@@ -1,5 +1,5 @@
+com.example.demo.Controller.DemoController
+com.example.demo.Controller.OtherDemoController
+com.example.demo.Controller.UserController
 com.example.demo.HelloWorldByteCodeApplication
 com.example.demo.HelloWorldByteCodeApplication: void main(java.lang.String[])
-com.example.demo.Service.DemoService
-com.example.demo.Service.DemoService: java.lang.String getResponse(java.lang.String)
-com.example.demo.Service.DemoService: java.lang.String postResponse(java.lang.String)

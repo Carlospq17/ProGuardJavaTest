@@ -2,27 +2,27 @@ package com.example.demo.Controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.Service.ServiceImpl.DemoServiceImpl;
+import com.example.demo.Service.OtherDemoService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @RestController
-public class DemoController {
+public class OtherDemoController {
 
     @Autowired
-    DemoServiceImpl demoService;
+    OtherDemoService otherdemoService;
 
-    @GetMapping(value = { "/hola" })
+    @GetMapping(value = { "/otherHola" })
     public String getHola() {
-        String s = demoService.getResponse("Holas x1");
+        String s = otherdemoService.getOtherResponse("Other Holas x1");
         return s;
     }
 
-    @PostMapping(value = { "/hola" })
+    @PostMapping(value = { "/otherHola" })
     public String postHola() {
-        String s = demoService.postResponse("Holas x2");
+        String s = otherdemoService.postOtherResponse("Other Holas x2");
         return s;
     }
 
