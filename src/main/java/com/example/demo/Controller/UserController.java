@@ -20,17 +20,13 @@ public class UserController {
 
 	@PostMapping("/user")
 	public User login(@RequestParam("user") String username, @RequestParam("password") String pwd) {
-		System.out.println("A");
-		String token = getJWTToken(username);
-		System.out.println("B");
-		User user = new User();
-		System.out.println("C");
-		user.setUser(username);
-		System.out.println("D");
-		user.setToken(token);
-		System.out.println("E" + user.toString() + user.getClass().getName());
-		User response = user;
-		return response;
+		// String token = getJWTToken(username);
+		// User u = new User();
+		// u.setUser(username);
+		// u.setPwd(pwd);
+		// u.setToken(token);
+		User u = new User("A", "B", "C");
+		return u;
 	}
 
 	private String getJWTToken(String username) {

@@ -133,10 +133,10 @@
 						<option>-keepnames class org.bouncycastle.** { *; }</option>
 						<option>-dontwarn org.bouncycastle.**</option> -->
 						<!-- This option will save all original names in interfaces (without obfuscate).-->
-						<option>-keepnames interface **</option>
+						<!-- <option>-keepnames interface **</option> -->
 						<!-- This option will save all original methods parameters in files defined in -keep sections,
                              otherwise all parameter names will be obfuscate.-->
-						<option>-keepparameternames</option>
+						<!-- <option>-keepparameternames</option> -->
 						<!-- This option will save all original class files (without obfuscate) but obfuscate all
                              in domain and service packages.-->
 						<option>-keep
@@ -161,7 +161,7 @@
 						<option>-keep class com.example.demo.Controller.OtherDemoController</option>
 						<option>-keep class com.example.demo.Controller.UserController</option>
 
-						<option>-keep class com.example.demo.Model.DemoModel</option>
+						<!-- <option>-keep class com.example.demo.Model.DemoModel</option>
 						<option>-keep class com.example.demo.Model.OtherDemoModel</option>
 						<option>-keep class com.example.demo.Model.User</option>
 
@@ -170,7 +170,7 @@
 						<option>-keep class com.example.demo.Service.DemoService</option>
 						<option>-keep class com.example.demo.Service.OtherDemoService</option>
 						<option>-keep class com.example.demo.Service.ServiceImpl.DemoServiceImpl</option>
-						<option>-keep class com.example.demo.Service.ServiceImpl.OtherDemoServiceImpl</option>
+						<option>-keep class com.example.demo.Service.ServiceImpl.OtherDemoServiceImpl</option> -->
 
 						<!-- <option>-keep class com.example.demo.Service.DemoService</option>
 						<option>-keep class com.example.demo.Service.ServiceImpl.DemoServiceImpl</option> -->
