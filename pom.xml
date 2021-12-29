@@ -126,14 +126,14 @@
                             *Annotation*,
                             EnclosingMethod
 						</option>
-						<option>-keep class io.jsonwebtoken.** { *; }</option>
+						<!-- <option>-keep class io.jsonwebtoken.** { *; }</option>
 						<option>-keepnames class io.jsonwebtoken.* { *; }</option>
 						<option>-keepnames interface io.jsonwebtoken.* { *; }</option>
 						<option>-keep class org.bouncycastle.** { *; }</option>
 						<option>-keepnames class org.bouncycastle.** { *; }</option>
-						<option>-dontwarn org.bouncycastle.**</option>
+						<option>-dontwarn org.bouncycastle.**</option> -->
 						<!-- This option will save all original names in interfaces (without obfuscate).-->
-						<!-- <option>-keepnames interface **</option> -->
+						<option>-keepnames interface **</option>
 						<!-- This option will save all original methods parameters in files defined in -keep sections,
                              otherwise all parameter names will be obfuscate.-->
 						<option>-keepparameternames</option>
@@ -144,11 +144,11 @@
                                 public static void main(java.lang.String[]);
                             }
 						</option>
-						<option>-keep
+						<!-- <option>-keep
                             class io.jsonwebtoken.** {
   								public protected private *;
 							}
-						</option>
+						</option> -->
 						<!-- This option ignore warnings such as duplicate class definitions and classes in incorrectly
                             named files-->
 						<option>-ignorewarnings</option>
@@ -160,6 +160,17 @@
 						<option>-keep class com.example.demo.Controller.DemoController</option>
 						<option>-keep class com.example.demo.Controller.OtherDemoController</option>
 						<option>-keep class com.example.demo.Controller.UserController</option>
+
+						<option>-keep class com.example.demo.Model.DemoModel</option>
+						<option>-keep class com.example.demo.Model.OtherDemoModel</option>
+						<option>-keep class com.example.demo.Model.User</option>
+
+						<option>-keep class com.example.demo.Security.JWTAuthorizationFilter</option>
+
+						<option>-keep class com.example.demo.Service.DemoService</option>
+						<option>-keep class com.example.demo.Service.OtherDemoService</option>
+						<option>-keep class com.example.demo.Service.ServiceImpl.DemoServiceImpl</option>
+						<option>-keep class com.example.demo.Service.ServiceImpl.OtherDemoServiceImpl</option>
 
 						<!-- <option>-keep class com.example.demo.Service.DemoService</option>
 						<option>-keep class com.example.demo.Service.ServiceImpl.DemoServiceImpl</option> -->

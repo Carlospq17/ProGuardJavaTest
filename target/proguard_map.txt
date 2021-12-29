@@ -1,0 +1,79 @@
+com.example.demo.Controller.DemoController -> com.example.demo.Controller.DemoController:
+    com.example.demo.Service.ServiceImpl.DemoServiceImpl demoService -> a
+    13:13:void <init>() -> <init>
+    20:20:com.example.demo.Model.DemoModel getHola() -> a
+    25:26:java.lang.String postHola() -> b
+com.example.demo.Controller.OtherDemoController -> com.example.demo.Controller.OtherDemoController:
+    com.example.demo.Service.OtherDemoService otherdemoService -> a
+    12:12:void <init>() -> <init>
+    19:20:java.lang.String getHola() -> a
+    25:26:java.lang.String postHola() -> b
+com.example.demo.Controller.UserController -> com.example.demo.Controller.UserController:
+    19:19:void <init>() -> <init>
+    23:33:com.example.demo.Model.User login(java.lang.String,java.lang.String) -> a
+    37:55:java.lang.String getJWTToken(java.lang.String) -> a
+com.example.demo.HelloWorldByteCodeApplication -> com.example.demo.HelloWorldByteCodeApplication:
+    15:15:void <init>() -> <init>
+    18:19:void main(java.lang.String[]) -> main
+com.example.demo.HelloWorldByteCodeApplication$WebSecurityConfig -> com.example.demo.HelloWorldByteCodeApplication$a:
+    com.example.demo.HelloWorldByteCodeApplication this$0 -> a
+    23:23:void <init>(com.example.demo.HelloWorldByteCodeApplication) -> <init>
+    27:33:void configure(org.springframework.security.config.annotation.web.builders.HttpSecurity) -> configure
+com.example.demo.Model.DemoModel -> com.example.demo.Model.DemoModel:
+    java.lang.String name -> a
+    java.lang.String lastName -> b
+    13:14:void <init>() -> <init>
+    16:16:java.lang.String getName() -> a
+    17:17:java.lang.String getLastName() -> b
+    9:9:void setName(java.lang.String) -> a
+    9:9:void setLastName(java.lang.String) -> b
+    10:10:java.lang.String toString() -> c
+    11:11:void <init>(java.lang.String,java.lang.String) -> <init>
+com.example.demo.Model.OtherDemoModel -> com.example.demo.Model.OtherDemoModel:
+    java.lang.String otherName -> a
+    java.lang.String otherLastName -> b
+    13:13:void <init>() -> <init>
+    14:14:java.lang.String getOtherName() -> a
+    15:15:java.lang.String getOtherLastName() -> b
+    9:9:void setOtherName(java.lang.String) -> a
+    9:9:void setOtherLastName(java.lang.String) -> b
+    10:10:java.lang.String toString() -> c
+    11:11:void <init>(java.lang.String,java.lang.String) -> <init>
+com.example.demo.Model.User -> com.example.demo.Model.User:
+    java.lang.String user -> a
+    java.lang.String pwd -> b
+    java.lang.String token -> c
+    13:14:void <init>() -> <init>
+    8:8:boolean equals(java.lang.Object) -> a
+    8:8:boolean canEqual(java.lang.Object) -> b
+    8:8:int hashCode() -> a
+    16:16:java.lang.String getUser() -> b
+    17:17:java.lang.String getPwd() -> c
+    18:18:java.lang.String getToken() -> d
+    10:10:void setUser(java.lang.String) -> a
+    10:10:void setPwd(java.lang.String) -> b
+    10:10:void setToken(java.lang.String) -> c
+    11:11:java.lang.String toString() -> e
+com.example.demo.Security.JWTAuthorizationFilter -> com.example.demo.Security.JWTAuthorizationFilter:
+    java.lang.String HEADER -> a
+    java.lang.String PREFIX -> b
+    java.lang.String SECRET -> c
+    23:27:void <init>() -> <init>
+    34:51:void doFilterInternal(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.FilterChain) -> doFilterInternal
+    54:55:io.jsonwebtoken.Claims validateToken(javax.servlet.http.HttpServletRequest) -> a
+    65:71:void setUpSpringAuthentication(io.jsonwebtoken.Claims) -> a
+    74:77:boolean checkJWTToken(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) -> a
+com.example.demo.Service.DemoService -> com.example.demo.Service.DemoService:
+    com.example.demo.Model.DemoModel getResponse(java.lang.String) -> a
+    java.lang.String postResponse(java.lang.String) -> b
+com.example.demo.Service.OtherDemoService -> com.example.demo.Service.OtherDemoService:
+    java.lang.String getOtherResponse(java.lang.String) -> a
+    java.lang.String postOtherResponse(java.lang.String) -> b
+com.example.demo.Service.ServiceImpl.DemoServiceImpl -> com.example.demo.Service.ServiceImpl.DemoServiceImpl:
+    9:9:void <init>() -> <init>
+    13:17:com.example.demo.Model.DemoModel getResponse(java.lang.String) -> a
+    22:26:java.lang.String postResponse(java.lang.String) -> b
+com.example.demo.Service.ServiceImpl.OtherDemoServiceImpl -> com.example.demo.Service.ServiceImpl.OtherDemoServiceImpl:
+    9:9:void <init>() -> <init>
+    13:17:java.lang.String getOtherResponse(java.lang.String) -> a
+    22:26:java.lang.String postOtherResponse(java.lang.String) -> b
