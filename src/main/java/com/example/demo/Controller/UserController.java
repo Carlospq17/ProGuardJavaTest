@@ -25,7 +25,8 @@ public class UserController {
 		// u.setUser(username);
 		// u.setPwd(pwd);
 		// u.setToken(token);
-		User u = new User("A", "B", "C");
+		// User u = new User("A", "B", "C");
+		User u = new User();
 		return u;
 	}
 
