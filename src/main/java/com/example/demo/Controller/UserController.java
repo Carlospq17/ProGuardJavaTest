@@ -19,15 +19,14 @@ import io.jsonwebtoken.SignatureAlgorithm;
 public class UserController {
 
 	@PostMapping("/user")
-	public User login(@RequestParam("user") String username, @RequestParam("password") String pwd) {
-		// String token = getJWTToken(username);
-		// User u = new User();
+	public String login(@RequestParam("user") String username, @RequestParam("password") String pwd) {
+		String token = getJWTToken(username);
+		User u = new User();
 		// u.setUser(username);
 		// u.setPwd(pwd);
-		// u.setToken(token);
+		u.setToken(token);
 		// User u = new User("A", "B", "C");
-		User u = new User();
-		return u;
+		return u.getToken();
 	}
 
 	private String getJWTToken(String username) {

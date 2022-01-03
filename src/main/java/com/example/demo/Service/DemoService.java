@@ -1,9 +1,9 @@
 package com.example.demo.Service;
 
-import com.example.demo.Model.DemoModel;
+import com.example.demo.dto.Model.DemoModelDto;
 
 public interface DemoService {
-    public DemoModel getResponse(String s);
+    public DemoModelDto getResponse(String s);
 
     public String postResponse(String s);
 }

@@ -2,8 +2,8 @@ package com.example.demo.Controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.Model.DemoModel;
 import com.example.demo.Service.ServiceImpl.DemoServiceImpl;
+import com.example.demo.dto.Model.DemoModelDto;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +16,7 @@ public class DemoController {
     DemoServiceImpl demoService;
 
     @GetMapping(value = { "/hola" })
-    public DemoModel getHola() {
+    public DemoModelDto getHola() {
         return demoService.getResponse("Holas x1");
     }
 
