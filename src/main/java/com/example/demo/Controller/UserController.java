@@ -25,6 +25,7 @@ public class UserController {
 		u.setUser(username);
 		u.setPwd(pwd);
 		u.setToken(token);
+		System.out.println(u.toString());
 		// User u = new User("A", "B", "C");
 		return u;
 	}
